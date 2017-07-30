@@ -1,0 +1,19 @@
+{
+  "name": "g-contacts",
+  "version": "1.0.0",
+  "description": "Node.js wrapper for the Google Contacts API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:npsinghmrj/g-contacts.git"
+  },
+  "keywords": [
+    "Google",
+    "Contacts"
+  ],
+  "author": "Naveen Prakash Singh <naveenprakashsingh15@gmail.com>",
+  "license": "ISC"
+}
