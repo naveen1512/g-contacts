@@ -12,8 +12,15 @@
   },
   "keywords": [
     "Google",
-    "Contacts"
+    "Contacts",
+    "Api",
+    "Google Contacts",
+    "client",
+    "client library"
   ],
   "author": "Naveen Prakash Singh <naveenprakashsingh15@gmail.com>",
-  "license": "ISC"
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.32"
+  }
 }
