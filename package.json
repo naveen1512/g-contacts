@@ -24,7 +24,5 @@
     "node": ">=6.10.0"
   },
   "dependencies": {},
-  "devDependencies": {
-    "google-auth-library": "^0.10.0"
-  }
+  "devDependencies": {}
 }
