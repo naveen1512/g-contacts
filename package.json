@@ -21,8 +21,11 @@
   "author": "Naveen Prakash Singh <naveenprakashsingh15@gmail.com>",
   "license": "MIT",
   "engines": {
-    "node": ">=6.10.0"
+    "node": ">=1.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "async": "^2.5.0",
+    "google-auth-library": "^0.10.0"
+  },
   "devDependencies": {}
 }
