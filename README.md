@@ -67,10 +67,36 @@ googleContacts.getContacts(options, function (error, data) {
 });
 ```
 
+* Add a new contact into user's google contacts.
+
+```javascript
+var options = {
+    name        : 'Ram',                    // Default is ''
+    display_name: 'Ram Singh',              // Default is ''
+    email       : 'ram@gmail.com',          
+    is_primary  : true,                     // Default is true
+    contact_type: 'other',                  // Default is other.
+    headers     :{                          // Optional
+        'GData-Version': '3.0',
+        'User-Agent'   : 'SomeAgent'
+    },
+    extended_property: [                    // Optional
+        {name: 'custom_key_2', value: 'custom_value_2'},
+        {name: 'custom_key_2', value: 'custom_value_2'}
+    ]
+};
+googleContacts.addContact(options, function (error) {
+    console.log("Error " + error);
+});
+```
+
+* Delete a contact or a list of contact from user's google contacts list.
+
+```javascript
+```
+
 TODO
 ====
 
-* Add a new contact.
 * Updation of a contact.
-* Deletion of a contact.
 
