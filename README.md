@@ -24,9 +24,9 @@ var GoogleContacts = require("g-contacts");
 var googleContacts = new GoogleContacts(CLIENT_ID, CLIENT_SECRET);
 var credentials    = {
   access_token : "ya29.GlyZBE5XzlI43OMOWbZueT",
-    expiry_date  : 1501494739000,               // Set it true to force a refresh always.
-    refresh_token: "1/wmz9DHCBg0CNtmKZVH_Wg",
-    token_type   : "Bearer"
+  expiry_date  : 1501494739000,               // Set it true to force a refresh always.
+  refresh_token: "1/wmz9DHCBg0CNtmKZVH_Wg",
+  token_type   : "Bearer"
 };
 
 googleContacts.setUserCredentials(credentials);
