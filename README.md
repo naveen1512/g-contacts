@@ -100,9 +100,19 @@ googleContacts.addContact(options, function (error) {
 });
 ```
 
-* Delete a contact or a list of contact from user's google contacts list.
+* Delete a contact or a list of contacts from user's google contacts list.
 
 ```javascript
+var options = {
+    contact_ids: '1232131bv4324',          // Or a array of contact ids e.g. ['1332rweff4', '21312edsadsa',...]
+    headers    :{                          // Optional
+        'GData-Version': '3.0',
+        'User-Agent'   : 'SomeAgent'
+    }
+};
+googleContacts.deleteContacts(options, function (error) {
+    console.log("Error " + error);
+});
 ```
 
 TODO
