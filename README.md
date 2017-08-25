@@ -31,6 +31,7 @@ var credential    = {
 
 googleContacts.setUserCredentials(credential);
 ```
+
 * Fetch all the contact's info such as 'name', 'email id', 'contact id' and 'contact type'.
 
 ```javascript
@@ -53,7 +54,6 @@ googleContacts.getContacts(options, function (error, data) {
 ```
 
 * Fecth the contact's info using query parameters.
-
 
 ```javascript
 var options = {
