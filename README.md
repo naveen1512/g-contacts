@@ -1,11 +1,20 @@
-# g-contacts
-Node.js wrapper for the Google Contacts API.
+Description
+===========
 
-# Install
+[Node.js](http://nodejs.org/) wrapper for the [Google Contacts API](https://developers.google.com/google-apps/contacts/v3/).
+
+Requirements
+============
+
+* [node.js](http://nodejs.org/) -- v0.10.32 or newer
+
+Installation
+============
   
-  npm install g-contacts --save
+  npm install g-contacts
   
-# Usages
+Examples
+========
 
 ```javscript
 var GoogleContacts = require("g-contacts");
@@ -19,10 +28,47 @@ var credentials    = {
 };
 
 googleContacts.setUserCredentials(credentials);
+```
+* Fetch all the contact's info such as 'name', 'email id', 'contact id' and 'contact type'.
 
+```javascript
 googleContacts.getContacts(function (error, data) {
     console.log("Error " + error);
     console.log("Data " + JSON.stringify(data));
 });
 ```
- 
+
+* Fetch the contact's info such as 'name', 'email id', 'contact id' and 'contact type' for a given contact id.
+
+```javascript
+var options = {
+  contact_id: '123er45456'
+};
+googleContacts.getContacts(options, function (error, data) {
+    console.log("Error " + error);
+    console.log("Data " + JSON.stringify(data));
+});
+```
+
+* Fecth the contact's info using query parameters.
+
+
+```javascript
+var options = {
+  query_params: {
+    q: "ram@gmail.com"
+  }
+};
+googleContacts.getContacts(options, function (error, data) {
+    console.log("Error " + error);
+    console.log("Data " + JSON.stringify(data));
+});
+```
+
+TODO
+====
+
+* Add a new contact.
+* Updation of a contact.
+* Deletion of a contact.
+
