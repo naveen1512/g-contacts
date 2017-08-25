@@ -45,7 +45,11 @@ googleContacts.getContacts(function (error, data) {
 
 ```javascript
 var options = {
-  contact_id: '123er45456'
+  contact_id: '123er45456',
+  headers   :{                          // Optional
+        'GData-Version': '3.0',
+        'User-Agent'   : 'SomeAgent'
+    },
 };
 googleContacts.getContacts(options, function (error, data) {
     console.log("Error " + error);
@@ -55,11 +59,17 @@ googleContacts.getContacts(options, function (error, data) {
 
 * Fetch the contact's info using query parameters.
 
+[For more info about query_params](https://developers.google.com/google-apps/contacts/v3/reference#contacts-query-parameters-reference)
+
 ```javascript
 var options = {
-  query_params: {
+  query_params: {    
     q: "ram@gmail.com"
-  }
+  },
+  headers     :{                          // Optional
+        'GData-Version': '3.0',
+        'User-Agent'   : 'SomeAgent'
+    },
 };
 googleContacts.getContacts(options, function (error, data) {
     console.log("Error " + error);
