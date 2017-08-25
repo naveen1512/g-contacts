@@ -8,6 +8,8 @@ Node.js wrapper for the Google Contacts API.
 # Usages
 
 ```javscript
+var GoogleContacts = require("g-contacts");
+
 var googleContacts = new GoogleContacts(CLIENT_ID, CLIENT_SECRET);
 var credentials    = {
   access_token : "ya29.GlyZBE5XzlI43OMOWbZueT",
