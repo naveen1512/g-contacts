@@ -59,7 +59,7 @@ googleContacts.getContacts(options, function (error, data) {
 
 * Fetch the contact's info using query parameters.
 
-[For more info about query_params](https://developers.google.com/google-apps/contacts/v3/reference#contacts-query-parameters-reference)
+  For more info about [query_params](https://developers.google.com/google-apps/contacts/v3/reference#contacts-query-parameters-reference)
 
 ```javascript
 var options = {
