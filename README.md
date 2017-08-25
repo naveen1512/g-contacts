@@ -53,7 +53,7 @@ googleContacts.getContacts(options, function (error, data) {
 });
 ```
 
-* Fecth the contact's info using query parameters.
+* Fetch the contact's info using query parameters.
 
 ```javascript
 var options = {
