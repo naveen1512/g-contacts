@@ -6,7 +6,7 @@ Description
 Requirements
 ============
 
-* [node.js](http://nodejs.org/) -- v0.10.32 or newer
+* [Node.js](http://nodejs.org/) -- v0.10.32 or newer
 
 Installation
 ============
@@ -16,18 +16,20 @@ Installation
 Examples
 ========
 
+* Set user's credentials. If you provide a refresh_token and expiry_date (milliseconds since the Unix Epoch) and the access_token has expired, the access_token will be automatically refreshed and the request is replayed.
+
 ```javscript
 var GoogleContacts = require("g-contacts");
 
 var googleContacts = new GoogleContacts(CLIENT_ID, CLIENT_SECRET);
-var credentials    = {
+var credential    = {
   access_token : "ya29.GlyZBE5XzlI43OMOWbZueT",
-    expiry_date  : 1501494739000, //true
+    expiry_date  : 1501494739000,               // Set it true to force a refresh always.
     refresh_token: "1/wmz9DHCBg0CNtmKZVH_Wg",
     token_type   : "Bearer"
 };
 
-googleContacts.setUserCredentials(credentials);
+googleContacts.setUserCredentials(credential);
 ```
 * Fetch all the contact's info such as 'name', 'email id', 'contact id' and 'contact type'.
 
