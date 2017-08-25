@@ -11,7 +11,7 @@ Requirements
 Installation
 ============
   
-  npm install g-contacts
+    npm install g-contacts
   
 Examples
 ========
